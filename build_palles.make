@@ -21,3 +21,8 @@ libraries[ckeditor][download][url] = http://download.cksource.com/CKEditor/CKEdi
 libraries[ckeditor][directory_name] = ckeditor
 libraries[ckeditor][destination] = libraries
 
+libraries[ckeditor][download][type] = file
+libraries[ckeditor][download][url] = https://raw.githubusercontent.com/reload/vopros-palles-build/master/palles_vopros.drush.inc
+libraries[ckeditor][directory_name] = palles_vopros
+libraries[ckeditor][destination] = drush
+
