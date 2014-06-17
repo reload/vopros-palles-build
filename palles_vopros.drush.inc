@@ -9,6 +9,9 @@
  * Implements hook_drush_sql_sync_sanitize().
  */
 function palles_vopros_drush_sql_sync_sanitize($site) {
+  // Bootstrap to db, so we can use drush_db_select().
+  drush_bootstrap(DRUSH_BOOTSTRAP_DRUPAL_DATABASE);
+
   // Update the opensearch URL in the variables table.
   // $sanitize_query = "UPDATE variable SET value='" . serialize("http://opensearchadmin.addi.dk/next_2.0/") . "' WHERE name = 'osa_addi_soap_url';";
   // drush_sql_register_post_sync_op('opensearch_url', dt('Set opensearch URL'), $sanitize_query);
